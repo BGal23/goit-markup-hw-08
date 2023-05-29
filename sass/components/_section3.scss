@@ -1,4 +1,12 @@
 .section3 {
+    display: none;
+}
+
+
+@media screen and (min-width: 769px) {
+.section3 {
+    display: inline;
+    
     &__bigFont {
         font-weight: $weight700;
         font-size: $size36;
@@ -33,4 +41,5 @@
             top: -73px;
             color: $whiteColor;
         }
+}
 }

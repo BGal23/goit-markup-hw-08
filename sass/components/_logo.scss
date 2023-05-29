@@ -2,7 +2,7 @@
     color: $blackColor;
     font-family: 'Raleway';
     font-weight: $weight700;
-    font-size: $size26;
+    font-size: $size24;
     line-height: 1.9375rem;
 }
 .footer__logo{
@@ -13,4 +13,10 @@
 .footer__blue,
 .header__blue {
     color: $blueColor;
+}
+
+@media screen and (min-width: 481px) {
+    .header__logo {
+        font-size: $size26;
+    }
 }
