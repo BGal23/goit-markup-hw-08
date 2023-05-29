@@ -1,0 +1,44 @@
+.modal__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.modal__checkmark {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    height: 16px;
+    width: 16px;
+    background-color: $whiteColor;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+.modal__checkbox input:hover ~ .modal__checkmark {
+    background-color: $whiteColor;
+    cursor: pointer;
+}
+.modal__checkbox input:checked ~ .modal__checkmark {
+    background-color: $blueColor;
+    border: none;
+}
+.modal__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.modal__checkbox input:checked ~ .modal__checkmark:after {
+    display: block;
+}
+.modal__checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid $whiteColor;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

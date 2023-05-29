@@ -1,0 +1,145 @@
+<!DOCTYPE html><!--Format Pliku dla wyszukiwarki-->
+<html lang="pl">
+    <head>
+        <title>Studio</title><!--Tytuł Strony-->
+        <meta charset="utf-8"/><!--System kodowania-->
+        <meta name="description" content="Zadanie domowe"/><!--Opis strony-->
+        <meta name="keywords" content="homework, goit, fullstack, developer"/><!--Słowa klucz-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <header><!--Nagłówek-->
+            <div class="container header">
+                <a class="header__link" href="https://bgal23.github.io/goit-markup-hw-08/"><h4 class="header__logo"><span class="header__blue">Web</span>Studio</h4></a><!--Główny link-->
+                <nav><!--Nawigacja do podstron-->
+                    <ul class="header__box">
+                        <li class="header__item header__special"><a class="header__link" href="https://bgal23.github.io/goit-markup-hw-08/">Agencja</a></li>
+                        <li class="header__item"><a class="header__link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="header__item"><a class="header__link" href="./kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="header__box--right">
+                    <span><a class="header__link2" href="mailto:info@devstudio.com"><svg width="16px" height="12px"><use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></span><!--Mail-->
+                    <span><a class="header__link2" href="tel:+48111111111"><svg width="10px" height="16px"><use href="./images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a></span><!--Telefon-->
+                </div>
+            </div>
+        </header>
+        <main><!--Główna-->
+        <section class="section1"><!--Dzieli strone na sekcje-->
+            <div class="container">
+                <h1 class="section1__item">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                <button class="section1__btm" type="button" data-modal-open>Zamów usługe</button><!--Przycisk-->
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+                <ul class="section2__box">
+                    <li><svg class="section2__icon" viewBox="0 0 100 160 "><use href="./images/icons.svg#icon-antenna"></use></svg><h4 class="section2__font">Lorem, ipsum.</h4><p class="section2__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vero voluptate neque, mollitia voluptas labore dicta cumque quam hic veritatis quasi est nihil tempore amet! Est, dolor alias! Praesentium, maxime?</p></li>
+                    <li><svg class="section2__icon" viewBox="0 0 100 160 "><use href="./images/icons.svg#icon-clock"></use></svg><h4 class="section2__font">Lorem, ipsum.</h4><p class="section2__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vero voluptate neque, mollitia voluptas labore dicta cumque quam hic veritatis quasi est nihil tempore amet! Est, dolor alias! Praesentium, maxime?</p></li>
+                    <li><svg class="section2__icon" viewBox="0 0 100 160 "><use href="./images/icons.svg#icon-diagram"></use></svg><h4 class="section2__font">Lorem, ipsum.</h4><p class="section2__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vero voluptate neque, mollitia voluptas labore dicta cumque quam hic veritatis quasi est nihil tempore amet! Est, dolor alias! Praesentium, maxime?</p></li>
+                    <li><svg class="section2__icon" viewBox="0 0 100 160 "><use href="./images/icons.svg#icon-astronaut"></use></svg><h4 class="section2__font">Lorem, ipsum.</h4><p class="section2__item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vero voluptate neque, mollitia voluptas labore dicta cumque quam hic veritatis quasi est nihil tempore amet! Est, dolor alias! Praesentium, maxime?</p></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container">
+                <h2 class="section3__bigFont">Czym sie zajmujemy</h2>
+                <ul class="section3__box">
+                    <li class="section3__item"><img src="./images/img1.1.jpg" width="370" height="294" alt="keboard"><div class="section3__label">Aplikacje Komputerowe</div></li><!--Zdjęcia-->
+                    <li class="section3__item"><img src="./images/img1.2.jpg" width="370" height="294" alt="phone"><div class="section3__label">Aplikacje Mobilne</div></li>
+                    <li class="section3__item"><img src="./images/img1.3.jpg" width="370" height="294" alt="tablet"><div class="section3__label">Rozwiązania graficzne</div></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="section4__boxTop container">
+                <h2 class="section4__bigFont">Nasz zespół</h2>
+                <ul class="section4__boxBottom container">
+                    <li class="section4__item"><img src="./images/img2.1.jpg" width="270" height="260" alt="man"><h4 class="section4__font">John Dee</h4><p>Product Designer</p><div><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-instagram"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-twitter"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-facebook"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-linkedin"></use></svg></div></li>
+                    <li class="section4__item"><img src="./images/img2.2.jpg" width="270" height="260" alt="woman"><h4 class="section4__font">John Dee</h4><p>Frontend Developer</p><div><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-instagram"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-twitter"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-facebook"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-linkedin"></use></svg></div></li>
+                    <li class="section4__item"><img src="./images/img2.3.jpg" width="270" height="260" alt="man"><h4 class="section4__font">John Dee</h4><p>Marketing</p><div><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-instagram"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-twitter"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-facebook"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-linkedin"></use></svg></div></li>
+                    <li class="section4__item"><img src="./images/img2.4.jpg" width="270" height="260" alt="man"><h4 class="section4__font">John Dee</h4><p>UI Designer</p><div><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-instagram"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-twitter"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-facebook"></use></svg><svg class="section4__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-linkedin"></use></svg></div></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container section5">
+                <h2 class="section5__bigFont">Nasi klienci</h2>
+                <ul class="section5__box">
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-1"></use></svg></li>
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-2"></use></svg></li>
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-3"></use></svg></li>
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-4"></use></svg></li>
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-5"></use></svg></li>
+                    <li><svg class="section5__icon" width="170" height="92"><use href="./images/icons.svg#icon-Logo-6"></use></svg></li>
+                </ul>
+            </div>
+        </section>
+        </main>
+        <footer class="footer"><!--Stopka-->
+            <div class="footer__bigBox container">
+                <div>
+                    <h4 class="footer__logo"><span class="footer__blue">Web</span>Studio</h4>
+                    <address><p>m. Warszawa, Aleje Jerozolimskie 21</p></address><!--Adres-->
+                    <p>info@example.com</p>
+                    <p>+48 111 111 111</p>
+                </div>
+                <div class="footer__box">
+                    <h5 class="footer__font">DOŁĄCZ DO NAS</h5>
+                    <ul class="footer__item">
+                        <li><svg class="footer__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-instagram"></use></svg></li>
+                        <li><svg class="footer__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-twitter"></use></svg></li>
+                        <li><svg class="footer__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-facebook"></use></svg></li>
+                        <li><svg class="footer__icon" width="44px" height="44px"><use href="./images/icons.svg#icon-linkedin"></use></svg></li>
+                    </ul>
+                </div>
+                <form name="newsletter" class="footer__newsletter">
+                    <label>
+                        ZAPISZ SIĘ DO NEWSLETTERA
+                        <input type="email" name="newsletter" placeholder="E-mail"/>
+                    </label>
+                    <button type="submit">Zapisz się<svg width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg></button>
+                </form>
+            </div>
+        </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <form name="form" class="modal__form">
+                    <h4>Zostaw swoje dane w formularzu poniżej</h4>
+                    <label class="modal__icon">
+                        Imie
+                        <svg width="12px" height="12px"><use href="./images/icons.svg#icon-person"></use></svg>
+                        <input class="modal__border" type="text" name="username"/>
+                    </label>
+                    <label class="modal__icon">
+                        Telefon
+                        <svg width="13px" height="13px"><use href="./images/icons.svg#icon-phone"></use></svg>
+                        <input class="modal__border" type="tel" name="phone"/>
+                    </label>
+                    <label class="modal__icon">
+                        E-mail
+                        <svg width="15px" height="12px"><use href="./images/icons.svg#icon-email"></use></svg>
+                        <input class="modal__border" type="email" name="email"/>
+                    </label>
+                    <label>
+                        Komentarz
+                        <textarea class="modal__border" name="coment" placeholder="Wprowadź tekst"></textarea>
+                    </label>
+                        <label class="modal__checkbox">
+                        <input type="checkbox" cheecked="cheecked"/>
+                        <span class="modal__checkmark"></span>
+                        Oświadczam że akceptuje <a href="./regulamin.html">Regulamin</a> i <a href="./polityka-prywatnosci.html">Politykę Prywatności.</a>
+                        </label>
+                    <button class="modal__submit" type="submit">Wyślij</button>
+                </form>
+                <button class="modal__btm" type="button" data-modal-close><b>✕</b></button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
+    </body>
+</html>

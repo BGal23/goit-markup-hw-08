@@ -1,0 +1,26 @@
+/*IMPORT*/
+@import 'utils/vars';
+@import 'components/logo';
+@import 'components/header';
+@import 'components/section1';
+@import 'components/section2';
+@import 'components/section3';
+@import 'components/section4';
+@import 'components/section5';
+@import 'components/section6';
+@import 'components/footer';
+@import 'components/modal_window';
+@import 'components/modal_form';
+@import 'components/modal_checkbox';
+
+body {
+    color: $greyColor;
+    font-family: 'Roboto', sans-serif;
+    font-size: $size14;
+    font-weight: $weight400;
+    line-height: 16px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

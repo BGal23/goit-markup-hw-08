@@ -1,0 +1,30 @@
+.section5 {
+    &__bigFont {
+        font-weight: $weight700;
+        font-size: $size36;
+        line-height: 2.625rem;
+        color: $blackColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 94px;
+    }
+    &__box {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 94px;
+    }
+    &__icon {
+        border: 1px solid $light2Color;
+        fill: $light2Color;
+        border-radius: 4px;
+        cursor: pointer;
+    
+        &:hover {
+            border: 1px solid $blueColor;
+            fill: $blueColor;
+        }
+    }
+}

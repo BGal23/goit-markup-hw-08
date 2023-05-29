@@ -1,0 +1,74 @@
+.modal {
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+        width: 448px;
+
+        & h4 {
+            font-weight: $weight700;
+            font-size: $size20;
+            line-height: 23px;
+            color: $blackColor;
+            margin-top: 40px;
+        }
+        & a {
+            color: $blueColor;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    & label:nth-child(-n + 5) {
+        font-size: 12px;
+    }
+    & input {
+        width: 448px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    & textarea {
+        width: 448px;
+        height: 120px;
+        resize: none;
+        margin-bottom: 20px;
+        padding: 12px 16px 12px 16px;
+    }
+    &__icon {
+
+        & svg {
+            position: absolute;
+            left: 50px;
+            margin-top: 30px;
+        }
+        &:focus,
+        &:hover {
+            fill: $blueColor;
+        }
+    }
+    &__border {
+
+        &:focus,
+        &:hover {
+            border: 1px solid $blueColor;
+            border-radius: 4px;
+        }
+    }
+    &__submit {
+        width: 200px;
+        height: 50px;
+        background-color: $blueColor;
+        color: $whiteColor;
+        margin-top: 30px;
+        border: none;
+        border-radius: 4px;
+        font-size: $size16;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

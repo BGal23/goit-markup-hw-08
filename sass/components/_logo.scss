@@ -1,0 +1,16 @@
+.header__logo {
+    color: $blackColor;
+    font-family: 'Raleway';
+    font-weight: $weight700;
+    font-size: $size26;
+    line-height: 1.9375rem;
+}
+.footer__logo{
+    @extend .header__logo;
+    color: $whiteColor;
+}
+
+.footer__blue,
+.header__blue {
+    color: $blueColor;
+}
