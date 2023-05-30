@@ -11,10 +11,11 @@
     }
     &__box {
         list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin-bottom: 94px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-inline-start: unset;
+        margin-bottom: 48px;
     }
     &__icon {
         border: 1px solid $light2Color;
@@ -25,6 +26,23 @@
         &:hover {
             border: 1px solid $blueColor;
             fill: $blueColor;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .section5 {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .section5 {
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 96px;
         }
     }
 }
