@@ -4,9 +4,11 @@
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
+    height: 600px;
     
     &__bigBox {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
         padding-bottom: 40px;
     }
@@ -19,7 +21,17 @@
     &__box {
         display: flex;
         flex-direction: column;
-        margin: 50px 0 0 70px;
+        align-items: center;
+    }
+    &__box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        & p {
+            margin-block-end: 4px;
+            margin-block-start: 4px;
+        }
     }
     &__item {
         list-style-type: none;
@@ -42,23 +54,25 @@
 }
 .footer__newsletter {
     display: flex;
-    width: 100;
+    flex-direction: column;
     height: 86px;
-    margin: 66px 0 0 72px;
+    margin: 40px 0 0 0;
     font-weight: $weight700;
     line-height: $size16;
-    align-items: flex-end;
+    align-items: center;
 
     & label {
         display: flex;
         flex-direction: column;
-        width: 358px;
+        align-items: center;
+        width: 450px;
     }
     & button {
         font-size: $size16;
         width: 200px;
         height: 50px;
-        margin-left: 12px;
+        margin: 30px 0 30px 0;
+        padding: 15px 0;
         background-color: $blueColor;
         color: $whiteColor;
         border-radius: 4px;
@@ -84,6 +98,61 @@
 
         &:focus {
             background-color: $whiteColor;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        height: 500px;
+        &__bigBox {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__box {
+            margin-top: 17px;
+        }
+        &__newsletter {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        height: 300px;
+
+        &__bigBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-bottom: 40px;
+        }
+        &__box1 {
+            display: flex;
+            align-items: flex-start;
+        }
+        &__box {
+            display: flex;
+            align-items: flex-start;
+            margin: 50px 0 0 70px;
+        }
+    }
+    .footer__newsletter {
+        display: flex;
+        flex-direction: row;
+        margin: 66px 0 0 72px;
+        align-items: flex-end;
+
+        & label {
+            align-items: flex-start;
+            width: 358px;
+        }
+        & button {
+            margin: 0 0 0 12px;
         }
     }
 }
