@@ -5,7 +5,7 @@
         align-items: center;
         margin: auto;
         flex-direction: column;
-        width: 448px;
+        width: 422px;
 
         & h4 {
             font-weight: $weight700;
@@ -24,13 +24,13 @@
         font-size: 12px;
     }
     & input {
-        width: 448px;
+        width: 422px;
         height: 40px;
         margin-bottom: 10px;
         padding-left: 30px;
     }
     & textarea {
-        width: 448px;
+        width: 422px;
         height: 120px;
         resize: none;
         margin-bottom: 20px;
@@ -40,7 +40,7 @@
 
         & svg {
             position: absolute;
-            left: 50px;
+            left: 25px;
             margin-top: 30px;
         }
         &:focus,
@@ -69,6 +69,23 @@
         &:hover {
             cursor: pointer;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal {
+        &__form {
+            width: 448px;
+        }
+        & textarea,
+        & input {
+            width: 448px;
+        }
+        &__icon {
+
+            & svg {
+                left: 50px;
+            }
         }
     }
 }

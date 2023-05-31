@@ -1,0 +1,73 @@
+.mobile__menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: $whiteColor;
+
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+}
+.mobile__menu.is-open {
+    transform: translateX(0);
+}
+.mobile__button {
+    border: none;
+    background-color: transparent;
+    position:relative;
+    left: 94%;
+    top: 15px;
+    &:hover {
+        fill: $blueColor;
+        cursor: pointer;
+    }
+}
+.mobile__box {
+    display: flex;
+    flex-direction: column;
+    font-size: $size36;
+    font-weight: $weight500;
+    line-height: 2;
+    & ul {
+        list-style-type: none;
+    }
+    & div {
+        font-size: $size26;
+        display: flex;
+        flex-direction: column;
+        margin: 300px 0 0 40px;
+
+        & a {
+            color: $greyColor;
+            text-decoration: none;
+        }
+    }
+    & a {
+        color: $blackColor;
+        text-decoration: none;
+    }
+    & a:hover {
+        color: $blueColor;
+        cursor: pointer;
+    }
+}
+.mobile__box2 {
+    margin: 64px 20px 48px;
+    display: flex;
+    justify-content: space-around;
+    font-size: $size16;
+    & a {
+        color: $blueColor;
+        text-decoration: none;
+    }
+    & a:hover {
+        cursor: pointer;
+    }
+    & a:nth-child(-n + 3)::after {
+        content: "|";
+        color: $greyColor;
+        position: relative;
+        left: 19px;
+    }
+}

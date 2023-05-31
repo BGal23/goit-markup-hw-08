@@ -8,7 +8,7 @@
 .modal__checkmark {
     position: absolute;
     top: 77%;
-    left: 10%;
+    left: 4%;
     height: 16px;
     width: 16px;
     background-color: $whiteColor;
@@ -41,4 +41,9 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+@media screen and (min-width: 768px) {
+    .modal__checkmark {
+        left: 10%;
+    }
 }

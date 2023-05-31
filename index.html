@@ -15,6 +15,7 @@
         <header><!--Nagłówek-->
             <div class="container header">
                 <a class="header__link" href="https://bgal23.github.io/goit-markup-hw-08/"><h4 class="header__logo"><span class="header__blue">Web</span>Studio</h4></a><!--Główny link-->
+                <button class="header__menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><svg width="24px" height="16px"><use href="./images/icons2.svg#icon-menu"></use></svg></button>
                 <nav><!--Nawigacja do podstron-->
                     <ul class="header__box">
                         <li class="header__item header__special"><a class="header__link" href="https://bgal23.github.io/goit-markup-hw-08/">Agencja</a></li>
@@ -140,6 +141,27 @@
                 <button class="modal__btm" type="button" data-modal-close><b>✕</b></button>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
+        <div class="mobile__menu js-menu-container" id="mobile-menu"><div class="container">
+            <button class="mobile__button js-close-menu"><svg width="19px" height="19px"><use href="./images/icons2.svg#icon-close"></use></svg></button>
+            <div class="mobile__box"><nav>
+                <ul>
+                    <li><a href="https://bgal23.github.io/goit-markup-hw-08/">Agencja</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./kontakty.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="tel:+48111111111">+48 111 111 111</a>
+                <a href="mailto:info@devstudio.com">info@example.com</a>
+            </div></div>
+            <div class="mobile__box2">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/">Twitter</a>
+                <a href="https://facebook.com/">Facebook</a>
+                <a href="https://linkedin.com/">LinkediIn</a>
+            </div>
+        </div></div>
+        <script defer src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
