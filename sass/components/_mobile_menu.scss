@@ -5,6 +5,9 @@
     top: 0;
     right: 0;
     background-color: $whiteColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     transform: translateX(100%);
     transition: transform 350ms ease-in-out;
@@ -13,10 +16,10 @@
     transform: translateX(0);
 }
 .mobile__button {
+    position: absolute;
     border: none;
     background-color: transparent;
-    position:relative;
-    left: 94%;
+    left: 91%;
     top: 15px;
     &:hover {
         fill: $blueColor;
@@ -31,25 +34,26 @@
     line-height: 2;
     & ul {
         list-style-type: none;
+        & a {
+            color: $blackColor;
+            text-decoration: none;
+        }
+        & a:hover {
+        color: $blueColor;
+        cursor: pointer;
+        }
     }
-    & div {
+    &--link {
         font-size: $size26;
         display: flex;
         flex-direction: column;
-        margin: 300px 0 0 40px;
-
-        & a {
-            color: $greyColor;
-            text-decoration: none;
-        }
-    }
-    & a {
-        color: $blackColor;
+        margin: 0 0 0 40px;
+        color: $greyColor;
         text-decoration: none;
-    }
-    & a:hover {
-        color: $blueColor;
-        cursor: pointer;
+        &:hover {
+            color: $blueColor;
+            cursor: pointer;
+        }
     }
 }
 .mobile__box2 {
