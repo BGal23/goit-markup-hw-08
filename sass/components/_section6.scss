@@ -22,8 +22,9 @@
     &__buttons {
         max-width: 545px;
         display: flex;
-        justify-content: space-between;
-        height: 38px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
     
         & button {
             padding: 0 22px 0;
@@ -32,6 +33,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            height: 38px;
 
             &:hover {
                 background-color: $blueColor;
@@ -50,7 +52,7 @@
     }
     &__box {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         list-style-type: none;
         padding: 0;
@@ -92,5 +94,13 @@
         font-weight: $weight400;
         padding: 23px 45px 45px 23px;
         font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section6 {
+        &__box {
+            justify-content: space-between;
+        }
     }
 }
